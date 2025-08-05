@@ -6,14 +6,14 @@ Aalto Summer School ’25: Multi-agent LLM system drafting ethical AI guidelines
 This project is part of a summer school on AI & Machine Learning at Aalto University.  
 It uses a multi-agent LLM system (built with LangChain and Groq API) to draft ethical policy guidelines for AI in neuroscience, specifically for stuttering research.
 
-# Install dependencies
+## Install dependencies
 python3 -m pip install langchain langchain-groq groq python-dotenv
 
-# Set your API key
-# Create a .env file:
+## Set your API key
+## Create a .env file:
 GROQ_API_KEY=your_key_here
 
-# Create a test_groq_connection.py
+## Create a test_groq_connection.py
 This script is a simple test to make sure everything is set up correctly and that your Groq API key is working.
 
 python3 test_groq_connection.py
