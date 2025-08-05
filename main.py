@@ -52,12 +52,6 @@ print("\n Developmental Neuroscientist:\n", devneuro_output)
 clinician_output = llm.invoke(speech_pathologist).content
 print("\n Speech Pathologist:\n", clinician_output)
 
-#neuro_output = llm.invoke(neuroimaging_expert).content
-#stutter_output = llm.invoke(stuttering_expert).content
-#ethics_output = llm.invoke(ethics_expert).content
-#devneuro_output = llm.invoke(developmental_neuro_expert).content
-#clinician_output = llm.invoke(speech_pathologist).content
-
 # Coordinator agent summarizes everything
 coordinator = [
     SystemMessage(content="You are the Coordinator. Your job is to read input from 5 domain experts and write a final document summarizing ethical AI guidelines for stuttering research."),
