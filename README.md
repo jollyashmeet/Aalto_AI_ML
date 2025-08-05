@@ -24,7 +24,7 @@ python3 test_groq_connection.py
   *"What are ethical issues in using AI for neuroscience of stuttering?"*
 - Prints the model's response in the terminal
 
-# the main multi-agent script (main.py)
+## the main multi-agent script (main.py)
 This script sets up a multi-agent system using LangChain and Groq’s LLaMA3 model. Five domain-specific agents (neuroimaging expert, stuttering researcher, AI ethics expert, developmental neuroscientist, and clinical speech-language pathologist) are prompted to give their views on AI use in stuttering research. A final “Coordinator” agent receives their responses and produces a 5-point summary document with ethical guidelines.
 
 The Groq API key is loaded from the .env file, and the script uses ChatGroq from LangChain to manage the conversation flow. Each agent’s output is passed to the next via simple variable chaining, simulating a structured multi-agent discussion.
@@ -40,7 +40,7 @@ Each agent was given a role-specific task or question, and they communicated seq
 I implemented a coordinator function to simulate this flow of ideas across agents. Each agent's response was stored and passed along to the next, creating a structured and informed dialogue.
 This coordination enables the agents to collectively build toward a final document or insight — in our case, to explore the neuroscience of stuttering using AI responsibly.
 
-# Interactive round - expert debate simulation (interactive_round.py)
+## Interactive round - expert debate simulation (interactive_round.py)
 This script is an extended version of the main multi-agent system. Instead of having the experts speak once and passing their responses to a coordinator, this version simulates a debate-like exchange between agents, where each expert responds to what the others have said. This makes the interaction feel more realistic and dynamic.
 
 What the script does:
